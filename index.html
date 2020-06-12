@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link href="./resources/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class='container'>
+        <header id="header">
+            <div id="header-title">
+                <h1 id='title'>This is a Form</h1>
+                <p id='description'>Thanks for taking time to complete this form</p>
+            </div>
+        </header>
+
+        <form id='survey-form'>
+            <div class='form-group'>
+                <label for="name" id="name-label">Name</label>
+                <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id='email-label' for="email">Email</label>
+                <input id="email" name="email" type="email" class="form-control" placeholder="Enter your Email"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age <span class='clue'>(optional)</span></label>
+                <input id='number' class="form-control" type='number' name='age' min='13' max='99' placeholder='Age'>
+
+            </div>
+            <div class="form-group">
+                <p>Which anime character best describes you?</p>
+                <select id='dropdown' class='form-control' name="role" required=>
+                    <option disabled="" selected="" value="">Select Character</option>
+                    <option value="piccolo">Piccolo</option>
+                    <option value="guts">Guts</option>
+                    <option value="tetsuo">Tetsuo</option>
+                    <option value="spike">Spike</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommened anime to your friends?</p>
+                <label>
+                    <input class="input-radio" name="user-recommended" value="absolutely" type="radio"
+                        checked="">Absolutely
+                </label>
+                <label>
+                    <input class="input-radio" name="user-recommended" value="maybe" type="radio" checked="">Maybe
+                </label>
+                <label>
+                    <input class="input-radio" name="user-recommended" value="no" type="radio" checked="">No
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see improved in your anime? <span class="clue">(Check all that apply)</span>
+                </p>
+                <label>
+                    <input class="input-checkboxes" name="prefer" value="less-filler" type="checkbox">Less Filler
+                </label>
+                <label>
+                    <input class="input-checkboxes" name="prefer" value="more-language-options" type="checkbox">More
+                    Language Options
+                </label>
+                <label>
+                    <input class="input-checkboxes" name="prefer" value="better-animation" type="checkbox">Better
+                    Animation
+                </label>
+                <label>
+                    <input class="input-checkboxes" name="prefer" value="better-writing" type="checkbox">Better Writing
+                </label>
+                <label>
+                    <input class="input-checkboxes" name="prefer" value="fewer-child-heroes" type="checkbox">Fewer Child
+                    Heroes
+                </label>
+                <label>
+                    <input class="input-checkboxes" name="prefer" value="more-fan-service" type="checkbox">More Fan
+                    Service
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Please enter your comment here"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit" class="submit-button" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"></script>
+</body>
+
+</html>
